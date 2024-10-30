@@ -183,20 +183,24 @@ body {
 </head>
 <body>
 
-<!-- Navigation bar with social media icons -->
-<div class="BLACC-bar BLACC-white BLACC-hide-small">
-  <a href="#" class="BLACC-bar-item BLACC-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="BLACC-bar-item BLACC-button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="BLACC-bar-item BLACC-button"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="BLACC-bar-item BLACC-button"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="BLACC-bar-item BLACC-button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="BLACC-bar-item BLACC-button"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="BLACC-bar-item BLACC-button BLACC-right"><i class="fa fa-search"></i></a>
+<!-- Navbar (sit on top) -->
+<div class="BLACC-top">
+  <div class="BLACC-bar BLACC-white BLACC-wide BLACC-padding BLACC-card">
+    <a href="#home" class="BLACC-bar-item BLACC-button"><b>BAS</b> B.L.A.C.C. App Store</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="BLACC-right">
+      <a href="https://blaccenterprise.github.io/mobile-blacc_profile/Login.html" class="BLACC-bar-item BLACC-button">Login</a>
+      <a href="https://blaccenterprise.github.io/mobile-ase/Login.html" class="BLACC-bar-item BLACC-button">A.S.E.</a>
+      <a href="https://blaccenterprise.github.io/mobile-blacchole/Website_Template_BLACC_Corporation_Computer_Science_Project_BLACChole.html" class="BLACC-bar-item BLACC-button">BLACChole</a>
+    </div>
+  </div>
 </div>
-  
-<!-- BLACC-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="BLACC-content" style="max-width:1600px">
+
+
+<!-- Page content -->
+<div class="BLACC-content BLACC-padding" style="max-width:1564px">
+<br>
+<br>
 
   <!-- Header -->
   <header class="BLACC-container BLACC-center BLACC-padding-48 BLACC-white BLACC-wide" style="width: 1300px">
@@ -209,10 +213,12 @@ and is wrapped around the whole page content, except for the footer in this exam
     <img src="./BLACCimages/BC.jpg" alt="Fashion Blog" width="1100" height="560">
     <div class="BLACC-display-left BLACC-padding-large">
       <h1 class="BLACC-text-yellow">B.L.A.C.C.</h1>
-      <h1 class="BLACC-jumbo BLACC-text-yellow"><b>App Store</b></h1>
+      <h1 class="BLACC-jumbo BLACC-text-yellow BLACC-hide-small"><b>App Store</b></h1>
+      <h6><button class="BLACC-button BLACC-yellow BLACC-hover-green BLACC-padding-large BLACC-large BLACC-opacity BLACC-hover-opacity-off" onclick="document.getElementById('blaccstoreapp').style.display='block'">DOWNLOAD ANDROID B.L.A.C.C. APP STORE</button></h6>
     </div>
   </header>
-
+  <br>
+<br>
   <!-- Grid -->
   <div class=" BLACC-padding BLACC-border">
 
@@ -227,11 +233,12 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
           <img src="./BLACCimages/BLACC_Search_August_Edition.jpg" alt="Men in Hats" style="width:100%" class="BLACC-padding-16">
         <p style="font-size: 15px; text-align: center; color: green;"><button  style="background-color: green;" class="BLACC-button BLACC-block BLACC-yellow BLACC-round"   onclick="myFunctionblaccstoreapp()" >More Details</button></p>
-          <p><strong>A Revolution for Reparations!</strong>B.L.A.C.C. is not meant for Blacks/African-Americans/Negros, it is meant for people in America who find it difficult to accept the trajectory of the socio-economic climate and want a different route.</p>
+          <p><strong>A Revolution for Repreration!</strong>B.L.A.C.C. is not meant for Blacks/African-Americans/Negros, it is meant for people in America who find it difficult to accept the trajectory of the socio-economic climate and want a different route.</p>
       <div  id="myDIVblaccstoreapp"  style="display:none">
         <div class="BLACC-justify">
       <p>Building the necessary components to provide a better quality of life through Biology, Language, Architecture, Computer Science and Change, is the sole foundation of B.L.A.C.C.</p>
           <p>Have the power of B.L.A.C.C. at the palm of your hand. You should download this app to utilize the multiple faceted attributes of B.L.A.C.C. from your phone, instead of using the web browser. Get updated on the latest features and designs. Having this app as your access to B.L.A.C.C. will also include but not limited to the applications Vital Mathematics, B.L.A.C.C. Connect, New Nexxus, OneiroNet, of course B.L.A.C.C. Corporation and much more</p>
+         <a href="./app-apk-6720fcf0470f5-1730215152.apk" download><p style="font-size: 15px; text-align: center; color: green;"><button  style="background-color: green;" class="BLACC-button BLACC-block BLACC-green BLACC-round" onclick="document.getElementById('download').style.display='block'">Download - 55.48MB   <i class="fa fa-android"></i></button></p></a>
         <!--
           <p class="BLACC-right"><button class="BLACC-button BLACC-white" onclick="myFunction('demo2')"><b>Replies  </b> <span class="BLACC-tag BLACC-white">2</span></button></p>
           <p class="BLACC-clear"></p>
@@ -431,8 +438,9 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- END GRID -->
   </div>
 
-<!-- END BLACC-content -->
+<!-- End page content -->
 </div>
+
 
 <!-- Subscribe Modal -->
 <div id="subscribe" class="BLACC-modal BLACC-animate-opacity">
